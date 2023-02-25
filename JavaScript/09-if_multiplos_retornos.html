@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF com multiplos retornos</title>
+</head>
+<body>
+    
+<div>
+    <h1>IF com mais possibilidades</h1>
+    <p>dando mais possibilidades para o <mark>if</mark>, multiplos testes sem <em>and</em> e <em>or</em>.</p>
+    <hr>
+</div>
+    
+<div>
+    <script>
+        
+        var nota=30;
+        var res;
+        //aprovado  >=60
+        //recuperação >=40 && <60
+        //reprovado <40
+
+        if (nota >= 60){
+            res="Aprovado";
+        } 
+        //else if((nota>=40)&&(nota<60)){
+        else if(nota>=40){
+            res="Recuperação";
+        }else {
+            res="Reprovado";
+        }
+
+        document.write(res);
+
+       
+        /*
+        var nota=22;
+        var res;
+       
+        if(nota>=90){
+            res="perfeitamente aprovado";
+        }
+        if (nota >= 60){
+            res="Aprovado";
+        } 
+        else if(nota >= 40){
+            res="Recuperação";
+        }else if(nota >=20){
+            res="Reprovado";
+        }
+        else{
+            res="muito bem reprovado";
+        }
+        document.write(res);
+        */
+    
+    </script>
+</div>
+
+</body>
+</html>

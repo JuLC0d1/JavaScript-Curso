@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    
+<div>
+    <h1>Segunda caixa de mensagem</h1>
+    <p>A partir de agora podemos colocar a segunda caixa de comando no nosso site, sendo esta <mark>prompt</mark>.</p>
+    <p>este também é do window. e como dito antes não é necessario colocar o window para a tag funcionar</p>
+    <hr>
+</div>
+
+<div>
+    <script>
+
+        var Omilo=01;
+
+        prompt("insira seu nome"); // pode ser só uma(ficara como string de cima da caixa de escrita)
+
+        prompt("insira seu nome por favor","digite aqui"); //ele espera ter pelo menos duas strings, mais q isso n
+
+        document.write("<h2>aqui fica o que você escreveu na caixa de mensagem</h2>");
+
+        var nome=prompt("Insira seu nome novamente","aqui por favor");
+        document.write("<mark>" + nome + "</mark>");/*desta forma o 'var' vai pegar o que foi escrito na caixa de mensagem e vai imprimir na tela, mostrando mais ainda a importancia da variavel (pode colcar mais variaveis como em qualquer outro document.write sem problemas)*/
+        
+
+        var Nome=prompt("escreva algo","aqui");
+        alert(Nome);
+
+    </script>
+</div>
+
+</body>
+</html>

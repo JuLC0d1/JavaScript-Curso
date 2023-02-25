@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AND e OR</title>
+</head>
+<body>
+    
+<div>
+    <h1>Diferença aqui:</h1>
+    <p> <mark>AND = && = E</mark> precisa que todos os testes sejão verdadeiras para ele dar verdadeiro, ou seja, se um for falso ele é falso:
+        <ul> 
+            <li><mark>V + V = V</mark></li>
+            <li>F + F = F</li>
+            <li>F + V = F</li>
+            <li>V + F = F</li>
+        </ul>
+    </p>
+
+    <p>Já o <mark>OR = || = OU</mark> é o inverso, ou seja, ele só vai retornar falso quando todos os testes forem falsos, nisso se um for verdadeiro ele é verdadeiro, assim como esta abaixo:
+        <ul>
+            <li><mark>F + F = F</mark></li>
+            <li>V + V = V</li>
+            <li>F + V = V</li>
+            <li>V + F = V</li>
+        </ul>
+    </p>
+    <p>&& da tecla de number 7</p>
+    <p>|| da tecla do simbolo \ (ao lado do shift da esquerda)</p>
+    <hr>
+</div>
+    
+<div>
+    <script>
+    
+        var pontos=10; //vai ganhar se aqui for maior, menor ou igual a 10, 20, 50, 60. Caso contrario vai perdeu
+        
+        //vitoria  if( (>=10) && (<=20)    ||    (>=50) && (<=60) )
+
+        if( //    v             v
+            ((pontos>=10)&&(pontos<=20)) // v
+            
+            || // v 
+
+            //   f               v
+            ((pontos>=50)&&(pontos<=60)) // f 
+        ){
+            document.write("ganhou");
+        } else {
+            document.write("perdeu")
+        }
+    // pode colocar tudo em uma linha só, mas assim fica bem melhor para entender as coisas
+
+        document.write("<br>")
+        document.write("<hr>")
+
+        //com diferentes variaveis:
+         
+        var Pontos=52;
+        var Energia=60
+        if( 
+            ((Pontos>=10)&&(Pontos<=20)) 
+            
+            || 
+            
+            ((Pontos>=50)&&(Pontos<=60)&&(Energia>70)) 
+        ){
+            document.write("ganhou");
+        } else {
+            document.write("perdeu")
+        }
+
+    </script>
+</div>
+
+<div>
+    <p>para assistir o video e entender tudo isso(ou ficar mais confuso), <button><a href="https://www.youtube.com/watch?v=hGPT8qOfpmk&list=PLx4x_zx8csUj3IbPQ4_X5jis_SkCol3eC&index=8" target="_blank" rel="external">click here</a></button></p>
+</div>
+</body>
+</html>

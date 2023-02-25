@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+</head>
+<body>
+
+<div>
+    <h1>Variaveis = var</h1>
+    <p>Em variavel pode se mudar o valor quantas vezes você quiser para o valor que quiser.</p>
+    <hr>
+</div>
+
+
+<div>
+    <script>
+    //variavel unica
+        
+        var Nome=null+"<hr>"; //inicializada mas com valor nullo(ou seja não tem valor)
+        var Idade=19;
+        var Sexo="mulher";
+
+        document.write(Nome + "<br>");
+        document.write(Idade + "<br>" + Sexo + "<br>" + "<hr>"); //concatenação, pode colocar muitos mais 
+
+    // declarção inplicita de variavel:
+        sol="Crepusculo"; //quando não coloca a tag 'VAR'
+
+        document.write(sol + "<br>");
+
+    //variaveis multiplas
+        
+        var nome, idade, sexo;
+        
+        //document.write("...");
+
+
+
+    /*
+        Variaveis permitidas:
+        var Holla
+        var holla
+        var Holla123
+        var _holla123
+
+        Variaveis não-permitidas:
+        var 99holla
+        var &holla - ou estando o E comercial em qualquer parte da variavel, não é permitido
+    */
+
+
+
+    document.write("<hr>")
+
+        var curso="CFB Cursos"; 
+        
+        curso="JavaScript";
+
+        document.write(curso + "<br>" + "<hr>")
+
+
+        var canal="CFB Cursos";
+        var num=2023;
+        
+        var texto=canal+" "+num;
+
+        document.write(texto + "<br>" + "<hr>")
+
+
+        //concatenação junto com uma soma
+        
+        var bandeira="Brasil";
+        var num=308;
+        var Num=341;
+
+        var napolitanos=bandeira+"<br>"+(num+Num); //para somar deve colocar dentro de ()
+
+        document.write(napolitanos);
+
+    </script>
+</div>
+
+</body>
+</html>
