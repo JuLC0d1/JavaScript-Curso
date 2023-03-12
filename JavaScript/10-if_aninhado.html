@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Aninhado</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div> <!--Inicio-->
+    <h1>IF aninhado</h1>
+
+    <p>O que é isso? é quando se tem um <mark>"IF"</mark> dentro de outro "IF".</p>
+    
+</div>
+
+    <hr>
+
+<div> <!--Script-->
+    <script>
+    
+        var nota= 94;
+        var res;
+
+        if(nota>=60){
+            res="Aprovado";
+            if(nota>=95){
+                res+=" com louvor ";
+            }else{
+                res+=" com nota normal";
+            }
+        }else if(nota>=50){
+            res="Recuperação";
+        }else{
+            res="Reprovado";
+            if(nota>=30){
+                res+=" por nota baixa";
+            }else{
+                res+=" com louvor";
+            }
+        }
+        
+        document.write(res);
+            
+    </script>
+</div>
+
+    <hr>
+
+<div>
+    <p>Para ver a aula confusa deste exercício <button><a href="https://youtu.be/YhR-8WnlaLU" target="_blank" rel="external">click here</a></button></p>
+</div>
+
+</body>
+</html>
